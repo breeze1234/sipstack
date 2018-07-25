@@ -152,21 +152,21 @@
         </executions>
       </plugin>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-          <additionalparam>-Xdoclint:none</additionalparam>
-        </configuration>
-        <executions>
-          <execution>
-            <id>attach-javadocs</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+<!--       <plugin> -->
+<!--         <groupId>org.apache.maven.plugins</groupId> -->
+<!--         <artifactId>maven-javadoc-plugin</artifactId> -->
+<!--         <configuration> -->
+<!--           <additionalparam>-Xdoclint:none</additionalparam> -->
+<!--         </configuration> -->
+<!--         <executions> -->
+<!--           <execution> -->
+<!--             <id>attach-javadocs</id> -->
+<!--             <goals> -->
+<!--               <goal>jar</goal> -->
+<!--             </goals> -->
+<!--           </execution> -->
+<!--         </executions> -->
+<!--       </plugin> -->
 
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -182,9 +182,9 @@
                 <requireJavaVersion>
                   <version>[1.7.0,)</version>
                 </requireJavaVersion>
-                <requireMavenVersion>
-                  <version>[3.0.5,3.1.2)</version>
-                </requireMavenVersion>
+<!--                 <requireMavenVersion> -->
+<!--                   <version>[3.0.5,3.1.2)</version> -->
+<!--                 </requireMavenVersion> -->
               </rules>
             </configuration>
           </execution>
